@@ -1,4 +1,4 @@
-package com.solid.StrategyPattern;
+package com.solid.StrategyPatternDIP;
 
 public interface RefundCompatibleCC {
     void refund();

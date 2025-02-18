@@ -1,6 +1,6 @@
-package com.solid.StrategyPattern.impl;
+package com.solid.DIP.impl;
 
-import com.solid.StrategyPattern.RefundStrategy;
+import com.solid.DIP.RefundStrategy;
 
 public class SameSourceRefund implements RefundStrategy {
     @Override

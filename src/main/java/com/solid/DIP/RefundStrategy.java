@@ -1,4 +1,4 @@
-package com.solid.StrategyPattern;
+package com.solid.DIP;
 
 public interface RefundStrategy {
     void refund();

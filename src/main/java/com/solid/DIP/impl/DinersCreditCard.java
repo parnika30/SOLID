@@ -1,6 +1,6 @@
-package com.solid.StrategyPattern.impl;
+package com.solid.DIP.impl;
 
-import com.solid.StrategyPattern.CreditCard;
+import com.solid.DIP.CreditCard;
 
 public class DinersCreditCard extends CreditCard {
     @Override

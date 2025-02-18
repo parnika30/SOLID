@@ -1,14 +1,15 @@
-package com.solid.StrategyPattern.impl;
+package com.solid.DIP.impl;
 
-import com.solid.StrategyPattern.CreditCard;
-import com.solid.StrategyPattern.RefundCompatibleCC;
-import com.solid.StrategyPattern.RefundStrategy;
+import com.solid.DIP.CreditCard;
+import com.solid.DIP.RefundCompatibleCC;
+import com.solid.DIP.RefundStrategy;
 
 public class MasterCreditCard extends CreditCard implements RefundCompatibleCC {
 
+
     private final RefundStrategy refundStrategy;
-    public MasterCreditCard() {
-        this.refundStrategy =  new BankRefund();
+    public MasterCreditCard(RefundStrategy refundStrategy) {
+        this.refundStrategy =  refundStrategy;
     }
     @Override
     public void swipeAndPay() {

@@ -1,13 +1,13 @@
-package com.solid.StrategyPattern.impl;
+package com.solid.StrategyPatternDIP.impl;
 
-import com.solid.StrategyPattern.CreditCard;
-import com.solid.StrategyPattern.RefundCompatibleCC;
-import com.solid.StrategyPattern.RefundStrategy;
-import com.solid.StrategyPattern.UpiCompatibleCC;
+import com.solid.StrategyPatternDIP.CreditCard;
+import com.solid.StrategyPatternDIP.RefundCompatibleCC;
+import com.solid.StrategyPatternDIP.RefundStrategy;
+import com.solid.StrategyPatternDIP.UpiCompatibleCC;
 
 public class RupayCreditCard extends CreditCard implements UpiCompatibleCC, RefundCompatibleCC {
 
-    private  RefundStrategy refundStrategy;
+    private final RefundStrategy refundStrategy;
     public RupayCreditCard() {
         this.refundStrategy =  new SameSourceRefund();
     }

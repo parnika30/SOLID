@@ -1,4 +1,4 @@
-package com.solid.StrategyPattern;
+package com.solid.DIP;
 
 public abstract class CreditCard {
 
@@ -19,5 +19,5 @@ public abstract class CreditCard {
 //    2. impl for this interface for writing the algo.
 //    3. use composition(this.algoName => make a new obj) to use the algo
 
-
+    // STRATEGY and DIP will do the same exact thing
 }
